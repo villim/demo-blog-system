@@ -23,7 +23,7 @@ allprojects {
     apply plugin: 'java'
     apply plugin: 'eclipse'
 
-    group = 'com.acs.ps'
+    group = 'io.github.villim'
     version = '1.0.0-SNAPSHOT'
 
     sourceCompatibility = 1.8
