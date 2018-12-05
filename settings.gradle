@@ -10,7 +10,7 @@
 rootProject.name = 'demo-blog-system'
 
 
-include 'demo-init'
-include 'demo-domain'
-include 'demo-infrastructure'
-include 'demo-rest-app'
+include 'blog-init'
+include 'blog-domain'
+include 'blog-infrastructure'
+include 'blog-rest-app'

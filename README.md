@@ -1,4 +1,4 @@
-# symbio-blog
+# demo-blog-system
 
 Demo Blog Management System
 
@@ -6,7 +6,7 @@ Demo Blog Management System
 
 Please check with Swagger api documents after app running
 
-![Swagger](https://github.com/villim/symbio-blog/blob/master/documents/swagger-apis-doc.png)
+![Swagger](https://github.com/villim/demo-blog-system/blob/master/documents/swagger-apis-doc.png)
 
 (if you cant see the picture, please click it)
 
@@ -25,26 +25,26 @@ Please check with Swagger api documents after app running
 ### 1. Prepare configuration folder
 
 ```bash
-$ mkdir -p /opt/symbio/{app,config,logs,h2db}/blog
+$ mkdir -p /opt/demo/{app,config,logs,h2db}/blog
 ```
 
-* **/opt/symbio/app/blog** is for excutable SpringBoot Jar file while deployment install with RPM ( not need for local testing )
-* **/opt/symbio/config/blog** is for Blog application configuration files
-* **/opt/symbio/logs/blog** is for Blog application log files
-* **/opt/symbio/h2db/blog** is for Blog application H2DB files
+* **/opt/demo/app/blog** is for excutable SpringBoot Jar file while deployment install with RPM ( not need for local testing )
+* **/opt/demo/config/blog** is for Blog application configuration files
+* **/opt/demo/logs/blog** is for Blog application log files
+* **/opt/demo/h2db/blog** is for Blog application H2DB files
 
 ### 2. Prepare configuration files
 
 Copy properties files from blog-init/src/main/resources
 ```bash
-$ cd ~/symbio-blog/
-$ copy -R blog-init/src/main/resources /opt/symbio/config/blog
+$ cd ~/demo-blog-system/
+$ copy -R blog-init/src/main/resources /opt/demo/config/blog
 ```
 
 Copy H2DB data files:
 ```bash
-$ cd ~/symbio-blog/
-$ copy /blog-init/DB-SCRIPTS/*.db /opt/symbio/config/blog
+$ cd ~/demo-blog-system/
+$ copy /blog-init/DB-SCRIPTS/*.db /opt/demo/config/blog
 
 ```
 
@@ -74,20 +74,20 @@ http://localhost:8082/
 
 Then configure as following picture:
 
-![H2DB Login](https://github.com/villim/symbio-blog/blob/master/documents/H2DB-login.png)
+![H2DB Login](https://github.com/villim/demo-blog-system/blob/master/documents/H2DB-login.png)
 
 (if you cant see the picture, please click it)
 
 ```text
 Driver Class: org.h2.Driver
-JDBC URL: jdbc:h2:/opt/symbio/h2db/blog/blogDb;DB_CLOSE_DELAY=-1
+JDBC URL: jdbc:h2:/opt/demo/h2db/blog/blogDb;DB_CLOSE_DELAY=-1
 User Name: sa
 Password: sa
 ```
 
 After logged in, you can see Schemas as:
 
-![H2DB Schemas](https://github.com/villim/symbio-blog/tree/master/documents/H2DB-schemas.png)
+![H2DB Schemas](https://github.com/villim/demo-blog-system/tree/master/documents/H2DB-schemas.png)
 
 (if you cant see the picture, please click it)
 
@@ -108,17 +108,17 @@ ctrl + c
 ### 4. Run App
 
 ```bash
-$ cd ~/symbio-blog
+$ cd ~/demo-blog-system
 $ gradle clean build
 $ java -jar blog-rest-app/build/libs/blog-rest-app-1.0.0-SNAPSHOT-a908931.jar
 ``` 
 
 Now you should be able to see Swagger page: 
 ```
-http://localhost:8080/symbio-blog/swagger-ui.html
+http://localhost:8080/demo-blog-system/swagger-ui.html
 ```
 
 And Log file is at: 
 ```
-/opt/symbio/logs/blog/blog-rest-app/blog-rest-app.log
+/opt/demo/logs/blog/blog-rest-app/blog-rest-app.log
 ```
