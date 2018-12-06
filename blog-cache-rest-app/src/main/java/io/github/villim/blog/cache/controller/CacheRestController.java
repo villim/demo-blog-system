@@ -2,13 +2,12 @@ package io.github.villim.blog.cache.controller;
 
 import io.github.villim.blog.cache.service.CacheManagerService;
 import io.github.villim.blog.cache.utils.CacheKeyDecoder;
-import io.github.villim.blog.domain.Version;
-import io.github.villim.blog.domain.cache.CacheObject;
-import io.github.villim.blog.domain.cache.CacheObjectFactory;
+import io.villim.blog.domain.Version;
+import io.villim.blog.domain.cache.CacheObject;
+import io.villim.blog.domain.cache.CacheObjectFactory;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Value;
 import org.springframework.core.env.Environment;
 import org.springframework.web.bind.annotation.*;
 
@@ -18,11 +17,6 @@ public class CacheRestController {
     private static final Logger LOG = LoggerFactory.getLogger(CacheRestController.class);
 
 
-    @Value("${sparkpost.authKey}")
-    private String authKey;
-
-    @Value("${sparkpost.baseUrl}")
-    private String baseUrl;
     @Autowired
     private Environment env;
 

@@ -1,4 +1,4 @@
-package io.github.villim.blog.cache.spring.exception;
+package io.villim.blog.rest.spring;
 
 import io.villim.blog.domain.exception.BlogServiceException;
 import io.villim.blog.domain.exception.BlogValidationException;
@@ -18,7 +18,7 @@ import org.springframework.web.servlet.NoHandlerFoundException;
 import org.springframework.web.servlet.mvc.method.annotation.ResponseEntityExceptionHandler;
 
 @ControllerAdvice
-public class CacheRestExceptionHandler extends ResponseEntityExceptionHandler {
+public class BlogRestExceptionHandler extends ResponseEntityExceptionHandler {
 
     private static final String INTERNAL_SERVER_ERROR = "Internal Server Error";
 

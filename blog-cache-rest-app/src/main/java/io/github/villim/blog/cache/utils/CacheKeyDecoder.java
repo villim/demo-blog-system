@@ -1,6 +1,6 @@
 package io.github.villim.blog.cache.utils;
 
-import io.github.villim.blog.domain.Constants;
+import io.villim.blog.domain.Constants;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.web.bind.annotation.PathVariable;

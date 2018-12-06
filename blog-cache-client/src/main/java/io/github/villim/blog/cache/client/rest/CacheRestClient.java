@@ -1,8 +1,8 @@
 package io.github.villim.blog.cache.client.rest;
 
-import io.github.villim.blog.domain.Constants;
-import io.github.villim.blog.domain.cache.CacheObject;
-import io.github.villim.blog.domain.cache.CacheObjectFactory;
+import io.villim.blog.domain.Constants;
+import io.villim.blog.domain.cache.CacheObject;
+import io.villim.blog.domain.cache.CacheObjectFactory;
 import org.apache.commons.lang3.StringUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

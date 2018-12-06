@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Configuration status="info">
     <properties>
-        <property name="logPath">/opt/aspira/logs/psacs/ps-acs-cache-rest-app/</property>
-        <property name="logNamePrefix">acs-cache-rest-app</property>
+        <property name="logPath">/opt/demo/logs/blog/blog-cache-rest-app/</property>
+        <property name="logNamePrefix">blog-rest-app</property>
         <property name="logName">${logPath}${logNamePrefix}</property>
     </properties>
 
@@ -35,6 +35,6 @@
         <Logger name="org.springframework.boot" level="debug"/>
         <!-- <Logger name="org.springframework.boot.autoconfigure.security" level="debug" /> -->
         <logger name="org.springframework.security" level="info"/>
-        <logger name="com.acs.ps" level="debug"/>
+        <logger name="io.github.villim.blog" level="debug"/>
     </Loggers>
 </Configuration>
