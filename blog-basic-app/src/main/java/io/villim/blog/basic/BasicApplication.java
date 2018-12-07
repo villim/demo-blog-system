@@ -7,13 +7,13 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.context.ApplicationPidFileWriter;
 import org.springframework.context.annotation.Import;
 
-@Import({BlogBasicApplicationContext.class})
+@Import({BasicApplicationContext.class})
 @SpringBootApplication
-public class BlogBasicApplication {
+public class BasicApplication {
 
     public static void main(String[] args) {
 
-        SpringApplication app = new SpringApplication(BlogBasicApplication.class);
+        SpringApplication app = new SpringApplication(BasicApplication.class);
         String pid = System.getenv(Constants.SPRING_PID_FILE_PROPERTY_NAME);
         if (StringUtils.isNotBlank(pid)) {
             app.addListeners(new ApplicationPidFileWriter(pid));
