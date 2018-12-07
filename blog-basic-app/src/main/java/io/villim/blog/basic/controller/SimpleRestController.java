@@ -1,4 +1,4 @@
-package io.villim.blog.simple.controller;
+package io.villim.blog.basic.controller;
 
 import io.villim.blog.domain.Version;
 import org.springframework.web.bind.annotation.RequestMapping;

@@ -1,4 +1,4 @@
-package io.villim.blog.simple;
+package io.villim.blog.basic;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
@@ -14,11 +14,6 @@ import org.springframework.security.crypto.password.PasswordEncoder;
 @Configuration
 public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
 
-//    public static void main(String[] args) {
-//        String password = new BCryptPasswordEncoder().encode("admin");
-//        System.out.println("password:" + password);
-//
-//    }
 
     @Override
     protected void configure(HttpSecurity http) throws Exception {
