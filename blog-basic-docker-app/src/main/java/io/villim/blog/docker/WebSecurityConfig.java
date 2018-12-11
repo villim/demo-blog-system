@@ -1,4 +1,4 @@
-package io.villim.blog.basic;
+package io.villim.blog.docker;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
